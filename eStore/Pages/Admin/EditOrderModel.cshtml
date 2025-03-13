@@ -1,0 +1,56 @@
+﻿@page "{id:int}"
+@model eStore.Pages.Admin.EditOrderModel
+<h2>Edit Order</h2>
+
+@if (TempData["Error"] != null)
+{
+    <div class="alert alert-danger">@TempData["Error"]</div>
+}
+
+@if (Model.Order != null)
+{
+    <form method="post">
+        <input type="hidden" asp-for="Order.OrderId" />
+        <input type="hidden" asp-for="Order.MemberId" /> <!-- Ẩn MemberId để gửi đi nhưng không hiển thị -->
+        <div class="form-group">
+            <label asp-for="Order.OrderId">Order ID</label>
+            <input asp-for="Order.OrderId" class="form-control" readonly />
+        </div>
+        <div class="form-group">
+            <label asp-for="Order.MemberId">Member ID</label>
+            <input asp-for="Order.MemberId" class="form-control" readonly />
+        </div>
+        <div class="form-group">
+            <label asp-for="Order.OrderDate">Order Date</label>
+            <input asp-for="Order.OrderDate" class="form-control" type="datetime-local" value="@Model.Order.OrderDate.ToString("yyyy-MM-ddTHH:mm")" />
+            <span asp-validation-for="Order.OrderDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Order.RequiredDate">Required Date</label>
+            <input asp-for="Order.RequiredDate" class="form-control" type="datetime-local" value="@(Model.Order.RequiredDate.HasValue ? Model.Order.RequiredDate.Value.ToString("yyyy-MM-ddTHH:mm") : "")" />
+            <span asp-validation-for="Order.RequiredDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Order.ShippedDate">Shipped Date</label>
+            <input asp-for="Order.ShippedDate" class="form-control" type="datetime-local" value="@(Model.Order.ShippedDate.HasValue ? Model.Order.ShippedDate.Value.ToString("yyyy-MM-ddTHH:mm") : "")" />
+            <span asp-validation-for="Order.ShippedDate" class="text-danger"></span>
+        </div>
+        <div class="form-group">
+            <label asp-for="Order.Freight">Freight</label>
+            <input asp-for="Order.Freight" class="form-control" type="number" step="0.01" />
+            <span asp-validation-for="Order.Freight" class="text-danger"></span>
+        </div>
+        <div>
+            <button type="submit" class="btn btn-primary">Update</button>
+            <a asp-page="OrderListModel" class="btn btn-secondary">Cancel</a>
+        </div>
+    </form>
+}
+else
+{
+    <p>Order not found.</p>
+}
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

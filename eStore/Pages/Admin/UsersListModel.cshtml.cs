@@ -2,9 +2,6 @@ using BusinessObject.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc.RazorPages;
 using Newtonsoft.Json;
-using System.Collections.Generic;
-using System.Net.Http;
-using System.Threading.Tasks;
 
 namespace eStore.Pages.Admin
 {
@@ -22,19 +19,31 @@ namespace eStore.Pages.Admin
             _logger = logger;
         }
 
-        public async Task OnGet()
+        public async Task OnGetAsync()
         {
             var client = _clientFactory.CreateClient("ApiClient");
-            var response = await client.GetAsync("https://localhost:7029/api/Users/alluser");
+            var token = HttpContext.Session.GetString("JWToken");
+            if (string.IsNullOrEmpty(token))
+            {
+                _logger.LogError("JWT Token not found in session");
+                Users = new List<AspNetUsers>();
+                TempData["Error"] = "Please log in as Admin.";
+                return;
+            }
+            client.DefaultRequestHeaders.Authorization = new System.Net.Http.Headers.AuthenticationHeaderValue("Bearer", token);
 
+            var response = await client.GetAsync("https://localhost:7029/api/Users/alluser");
             if (response.IsSuccessStatusCode)
             {
                 var json = await response.Content.ReadAsStringAsync();
                 Users = JsonConvert.DeserializeObject<List<AspNetUsers>>(json);
+                _logger.LogInformation($"Fetched users: {json}");
             }
             else
             {
                 _logger.LogError($"Failed to fetch users. Status code: {response.StatusCode}");
+                Users = new List<AspNetUsers>();
+                TempData["Error"] = "Failed to load user list.";
             }
         }
     }

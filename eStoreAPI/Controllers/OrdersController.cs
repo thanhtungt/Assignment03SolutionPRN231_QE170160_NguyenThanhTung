@@ -5,6 +5,7 @@ using BusinessObject.Models;
 using System.Threading.Tasks;
 using System.Collections.Generic;
 using AutoMapper;
+using Microsoft.AspNetCore.Authorization;
 
 namespace eStoreAPI.Controllers
 {
@@ -42,6 +43,7 @@ namespace eStoreAPI.Controllers
             var orderDTO = _mapper.Map<OrderDTO>(order);
             return Ok(orderDTO);
         }
+       
 
         // POST: api/Orders
         [HttpPost]
@@ -85,6 +87,7 @@ namespace eStoreAPI.Controllers
         {
             return _context.Orders.Any(e => e.OrderId == id);
         }
+       
 
         // DELETE: api/Orders/5
         [HttpDelete("{id}")]
@@ -101,6 +104,32 @@ namespace eStoreAPI.Controllers
 
             var orderDTO = _mapper.Map<OrderDTO>(order);
             return Ok(orderDTO);
+        }
+
+        // Endpoint mới: Báo cáo doanh số theo kỳ
+        [HttpGet("sales-report")]
+        [Authorize(Roles = "Admin")]
+        public async Task<ActionResult<IEnumerable<object>>> GetSalesReport(DateTime startDate, DateTime endDate)
+        {
+            var orders = await _context.Orders
+                .Where(o => o.OrderDate >= startDate && o.OrderDate <= endDate)
+                .Select(o => new
+                {
+                    o.OrderId,
+                    o.MemberId,
+                    o.OrderDate,
+                    o.Freight,
+                    TotalSales = o.Freight // Nếu có OrderDetails, tính tổng từ đó
+                })
+                .OrderByDescending(o => o.TotalSales)
+                .ToListAsync();
+
+            if (!orders.Any())
+            {
+                return NotFound("No orders found in the specified period.");
+            }
+
+            return Ok(orders);
         }
     }
 }

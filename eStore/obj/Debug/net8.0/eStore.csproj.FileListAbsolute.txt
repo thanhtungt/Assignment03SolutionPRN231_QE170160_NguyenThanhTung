@@ -108,3 +108,4 @@ F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStore\obj\Debug\net8.
 F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStore\obj\Debug\net8.0\eStore.pdb
 F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStore\obj\Debug\net8.0\eStore.genruntimeconfig.cache
 F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStore\obj\Debug\net8.0\ref\eStore.dll
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStore\obj\Debug\net8.0\eStore.sourcelink.json

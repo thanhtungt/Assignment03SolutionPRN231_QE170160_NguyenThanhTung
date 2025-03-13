@@ -2,7 +2,7 @@
 @model eStore.Pages.Admin.OrderListModel
 <h2>Order List</h2>
 @if(User.IsInRole("Admin")){
-    <a href="@Url.Page("/Admin/AddOrderModel")" class="btn btn-success mb-3">Add</a>
+    @*  <a href="@Url.Page("/Admin/AddOrderModel")" class="btn btn-success mb-3">Add</a> *@
 }
 
 <table class="table">
@@ -27,10 +27,10 @@
                     <td>@order.RequiredDate</td>
                     <td>@order.ShippedDate</td>
                     <td>@order.Freight</td>
-                    @* <td>
+                    <td>
                         <a href="@Url.Page("/Admin/EditOrderModel", new { id = order.OrderId })" class="btn btn-primary">Edit</a>
                         <button class="btn btn-danger" onclick="deleteOrder(@order.OrderId)">Delete</button>
-                    </td> *@
+                    </td>
                 </tr>
             }
         }
@@ -41,7 +41,7 @@
     </tbody>
 </table>
 
-@* @section Scripts {
+@section Scripts {
     <script>
         function deleteOrder(orderId) {
             if (confirm('Are you sure you want to delete this order?')) {
@@ -65,4 +65,4 @@
             }
         }
     </script>
-} *@
+}

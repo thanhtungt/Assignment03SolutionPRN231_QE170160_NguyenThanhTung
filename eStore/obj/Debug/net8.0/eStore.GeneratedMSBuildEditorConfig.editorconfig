@@ -50,6 +50,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdENhdGVnb3J5TW9kZWwuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/EditOrderModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdE9yZGVyTW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
 [F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/EditProductModel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdFByb2R1Y3RNb2RlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -60,6 +64,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/ProductManagementModel.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdE1hbmFnZW1lbnRNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/SalesReportModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cU2FsZXNSZXBvcnRNb2RlbC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/UsersListModel.cshtml]

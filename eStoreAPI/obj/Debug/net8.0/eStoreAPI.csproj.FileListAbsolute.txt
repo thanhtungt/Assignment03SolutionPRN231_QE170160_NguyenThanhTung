@@ -160,3 +160,4 @@ F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStoreAPI\obj\Debug\ne
 F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStoreAPI\obj\Debug\net8.0\eStoreAPI.pdb
 F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStoreAPI\obj\Debug\net8.0\eStoreAPI.genruntimeconfig.cache
 F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStoreAPI\obj\Debug\net8.0\ref\eStoreAPI.dll
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStoreAPI\obj\Debug\net8.0\eStoreAPI.sourcelink.json
