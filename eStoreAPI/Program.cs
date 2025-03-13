@@ -17,6 +17,11 @@ builder.Services.AddDbContext<ApplicationDbContext>(options =>
 // Cấu hình Identity
 builder.Services.AddIdentity<AspNetUsers, AspNetRoles>(options =>
 {
+    // Cấu hình Lockout
+    options.Lockout.DefaultLockoutTimeSpan = TimeSpan.FromMinutes(5); // Thời gian khóa: 5 phút
+    options.Lockout.MaxFailedAccessAttempts = 3; // Số lần thất bại tối đa: 3
+    options.Lockout.AllowedForNewUsers = true; // Áp dụng khóa cho người dùng mới
+
     options.Password.RequireDigit = true;
     options.Password.RequiredLength = 6;
     options.Password.RequireNonAlphanumeric = false;
@@ -97,6 +102,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddAutoMapper(typeof(MappingProfile));
+builder.Services.AddHttpContextAccessor(); // Để lấy token từ Session
 
 var app = builder.Build();
 

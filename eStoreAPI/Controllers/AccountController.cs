@@ -7,6 +7,7 @@ using System.Security.Claims;
 using System.Text;
 using BusinessObject.Models;
 using Microsoft.AspNetCore.Authorization;
+using System.Data;
 
 namespace eStoreAPI.Controllers
 {
@@ -70,19 +71,53 @@ namespace eStoreAPI.Controllers
             return BadRequest(new { Errors = result.Errors.Select(e => e.Description) });
         }
 
+ 
         [HttpPost("login")]
         public async Task<IActionResult> Login([FromBody] LoginDto model)
         {
-            var result = await _signInManager.PasswordSignInAsync(model.Email, model.Password, false, false);
+            var user = await _userManager.FindByEmailAsync(model.Email);
+            if (user == null)
+            {
+                return BadRequest(new { Message = "Invalid email or password." });
+            }
+
+            // Kiểm tra trạng thái khóa tài khoản
+            if (await _userManager.IsLockedOutAsync(user))
+            {
+                var lockoutEnd = await _userManager.GetLockoutEndDateAsync(user);
+                return BadRequest(new { Message = $"Tài khoản bị khóa cho đến khi {lockoutEnd?.LocalDateTime}. Vui lòng thử lại sau." });
+            }
+
+            var result = await _signInManager.PasswordSignInAsync(user.UserName, model.Password, false, lockoutOnFailure: true);
             if (result.Succeeded)
             {
-                var user = await _userManager.FindByEmailAsync(model.Email);
+                // Reset số lần thất bại khi đăng nhập thành công
+                await _userManager.ResetAccessFailedCountAsync(user);
+
+                // Lấy roles của user
                 var roles = await _userManager.GetRolesAsync(user);
+
+                // Tạo JWT token (gọi phương thức với tham số roles)
                 var token = GenerateJwtToken(user, roles);
-                return Ok(new LoginResponseDto { Token = token, Roles = roles });
+                return Ok(new { Token = token });
             }
-            return Unauthorized(new { Message = "Invalid login attempt" });
+            else
+            {
+                // Tăng số lần thất bại và khóa nếu cần
+                await _userManager.AccessFailedAsync(user);
+                var failedAttempts = await _userManager.GetAccessFailedCountAsync(user);
+                var maxAttempts = _userManager.Options.Lockout.MaxFailedAccessAttempts;
+
+                if (failedAttempts >= maxAttempts)
+                {
+                    return BadRequest(new { Message = $"Tài khoản đã bị khóa do {maxAttempts} lần đăng nhập không thành công. Hãy thử lại sau 5 phút." });
+                }
+
+                return BadRequest(new { Message = $"đăng nhập không hợp lệ. {maxAttempts - failedAttempts} lần thử còn lại." });
+            }
         }
+
+
 
         [Authorize]
         [HttpGet("getUserId")]
@@ -99,39 +134,30 @@ namespace eStoreAPI.Controllers
             return Ok(user.Id);
         }
 
+
         private string GenerateJwtToken(AspNetUsers user, IList<string> roles)
         {
             var claims = new List<Claim>
     {
-        new Claim(JwtRegisteredClaimNames.Sub, user.Email),
-        new Claim(JwtRegisteredClaimNames.Jti, Guid.NewGuid().ToString()),
-        new Claim(ClaimTypes.NameIdentifier, user.Id)
+        new Claim(ClaimTypes.NameIdentifier, user.Id),
+        new Claim(ClaimTypes.Email, user.Email)
     };
 
-            foreach (var role in roles)
-            {
-                claims.Add(new Claim(ClaimTypes.Role, role));
-            }
+            claims.AddRange(roles.Select(role => new Claim(ClaimTypes.Role, role)));
 
-            var jwtKey = _configuration["JwtSettings:Key"]; // Sửa thành "JwtSettings:Key"
-            if (string.IsNullOrEmpty(jwtKey))
-            {
-                throw new ArgumentNullException("JwtSettings:Key", "JWT Key is missing in configuration.");
-            }
-
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(jwtKey));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["JwtSettings:Key"]));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-            var expires = DateTime.Now.AddDays(1);
-
             var token = new JwtSecurityToken(
-                issuer: _configuration["JwtSettings:Issuer"], // Sửa thành "JwtSettings:Issuer"
-                audience: _configuration["JwtSettings:Audience"], // Sửa thành "JwtSettings:Audience"
+                issuer: _configuration["JwtSettings:Issuer"],
+                audience: _configuration["JwtSettings:Audience"],
                 claims: claims,
-                expires: expires,
-                signingCredentials: creds
-            );
+                expires: DateTime.Now.AddDays(1),
+                signingCredentials: creds);
 
             return new JwtSecurityTokenHandler().WriteToken(token);
         }
+
+
     }
 }
+

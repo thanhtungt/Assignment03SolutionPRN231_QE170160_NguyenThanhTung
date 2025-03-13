@@ -3,20 +3,20 @@
   "WorkspaceRootPath": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|f:\\spring2025\\prn231\\ass3\\assigment03solution_studentcode\\estore\\pages\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|solutionrelative:estore\\pages\\admin\\admindashboard.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{C9D9ED6A-0941-42AB-9453-26B4D4CBB98B}|eStoreAPI\\eStoreAPI.csproj|f:\\spring2025\\prn231\\ass3\\assigment03solution_studentcode\\estoreapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9D9ED6A-0941-42AB-9453-26B4D4CBB98B}|eStoreAPI\\eStoreAPI.csproj|solutionrelative:estoreapi\\controllers\\accountcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|f:\\spring2025\\prn231\\ass3\\assigment03solution_studentcode\\estore\\pages\\admin\\salesreportmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|solutionrelative:estore\\pages\\admin\\salesreportmodel.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|f:\\spring2025\\prn231\\ass3\\assigment03solution_studentcode\\estore\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|solutionrelative:estore\\pages\\account\\login.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|f:\\spring2025\\prn231\\ass3\\assigment03solution_studentcode\\estore\\pages\\admin\\salesreportmodel.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|solutionrelative:estore\\pages\\admin\\salesreportmodel.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|f:\\spring2025\\prn231\\ass3\\assigment03solution_studentcode\\estore\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A9B21819-5F0F-445E-9F62-5A21A6FDBC86}|eStore\\eStore.csproj|solutionrelative:estore\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C9D9ED6A-0941-42AB-9453-26B4D4CBB98B}|eStoreAPI\\eStoreAPI.csproj|f:\\spring2025\\prn231\\ass3\\assigment03solution_studentcode\\estoreapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C9D9ED6A-0941-42AB-9453-26B4D4CBB98B}|eStoreAPI\\eStoreAPI.csproj|solutionrelative:estoreapi\\controllers\\orderscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{C9D9ED6A-0941-42AB-9453-26B4D4CBB98B}|eStoreAPI\\eStoreAPI.csproj|f:\\spring2025\\prn231\\ass3\\assigment03solution_studentcode\\estoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C9D9ED6A-0941-42AB-9453-26B4D4CBB98B}|eStoreAPI\\eStoreAPI.csproj|solutionrelative:estoreapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 188,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 4,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,54 +38,54 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "AdminDashboard.cshtml",
-              "DocumentMoniker": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Admin\\AdminDashboard.cshtml",
-              "RelativeDocumentMoniker": "eStore\\Pages\\Admin\\AdminDashboard.cshtml",
-              "ToolTip": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Admin\\AdminDashboard.cshtml",
-              "RelativeToolTip": "eStore\\Pages\\Admin\\AdminDashboard.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAwAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T19:30:41.699Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 2,
-              "Title": "SalesReportModel.cshtml.cs",
-              "DocumentMoniker": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Admin\\SalesReportModel.cshtml.cs",
-              "RelativeDocumentMoniker": "eStore\\Pages\\Admin\\SalesReportModel.cshtml.cs",
-              "ToolTip": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Admin\\SalesReportModel.cshtml.cs",
-              "RelativeToolTip": "eStore\\Pages\\Admin\\SalesReportModel.cshtml.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAiwFAAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T19:29:58.867Z",
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "eStore\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "eStore\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-13T19:41:57.765Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "SalesReportModel.cshtml",
-              "DocumentMoniker": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Admin\\SalesReportModel.cshtml",
-              "RelativeDocumentMoniker": "eStore\\Pages\\Admin\\SalesReportModel.cshtml",
-              "ToolTip": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Admin\\SalesReportModel.cshtml",
-              "RelativeToolTip": "eStore\\Pages\\Admin\\SalesReportModel.cshtml",
-              "ViewState": "AgIAABEAAAAAAAAAAAAcwDkAAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-03-13T19:29:55.659Z",
+              "Title": "Login.cshtml.cs",
+              "DocumentMoniker": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeDocumentMoniker": "eStore\\Pages\\Account\\Login.cshtml.cs",
+              "ToolTip": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStore\\Pages\\Account\\Login.cshtml.cs",
+              "RelativeToolTip": "eStore\\Pages\\Account\\Login.cshtml.cs",
+              "ViewState": "AgIAAF4AAAAAAAAAAAAswGoAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T19:41:09.406Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "AccountController.cs",
+              "DocumentMoniker": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStoreAPI\\Controllers\\AccountController.cs",
+              "RelativeDocumentMoniker": "eStoreAPI\\Controllers\\AccountController.cs",
+              "ToolTip": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStoreAPI\\Controllers\\AccountController.cs",
+              "RelativeToolTip": "eStoreAPI\\Controllers\\AccountController.cs",
+              "ViewState": "AgIAAF8AAAAAAAAAAADwv2gAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-13T19:39:31.546Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "OrdersController.cs",
-              "DocumentMoniker": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStoreAPI\\Controllers\\OrdersController.cs",
-              "RelativeDocumentMoniker": "eStoreAPI\\Controllers\\OrdersController.cs",
-              "ToolTip": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStoreAPI\\Controllers\\OrdersController.cs",
-              "RelativeToolTip": "eStoreAPI\\Controllers\\OrdersController.cs",
-              "ViewState": "AgIAAGgAAAAAAAAAAAAiwIQAAAAJAAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStoreAPI\\Program.cs",
+              "RelativeDocumentMoniker": "eStoreAPI\\Program.cs",
+              "ToolTip": "F:\\SPRING2025\\PRN231\\ass3\\Assigment03Solution_StudentCode\\eStoreAPI\\Program.cs",
+              "RelativeToolTip": "eStoreAPI\\Program.cs",
+              "ViewState": "AgIAAFoAAAAAAAAAAAAUwLEAAAAfAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-13T19:28:55.524Z",
+              "WhenOpened": "2025-03-13T19:38:42.634Z",
               "EditorCaption": ""
             }
           ]
