@@ -1,0 +1,46 @@
+﻿@page
+@model eStore.Pages.Users.CartModel
+<h2>Giỏ hàng của bạn</h2>
+
+@if (Model.Cart.Items.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Tên sản phẩm</th>
+                <th>Đơn giá</th>
+                <th>Số lượng</th>
+                <th>Tổng</th>
+                <th>Danh mục</th>
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model.Cart.Items)
+            {
+                <tr>
+                    <td>@item.ProductName</td>
+                    <td>@item.UnitPrice</td>
+                    <td>@item.Quantity</td>
+                    <td>@(item.UnitPrice * item.Quantity)</td>
+                    <td>@item.CategoryName</td>
+                    <td>
+                        <form method="post" asp-page-handler="RemoveFromCart">
+                            <input type="hidden" name="productId" value="@item.ProductId" />
+                            <button type="submit" class="btn btn-danger">Xóa</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+
+    <!-- Nút đặt hàng -->
+    <form method="post" asp-page-handler="PlaceOrder">
+        <button type="submit" class="btn btn-success mt-3">Đặt hàng</button>
+    </form>
+}
+else
+{
+    <p>Giỏ hàng của bạn đang trống.</p>
+}

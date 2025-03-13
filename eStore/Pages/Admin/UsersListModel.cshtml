@@ -1,0 +1,27 @@
+﻿@page
+@model eStore.Pages.Admin.UsersListModel
+
+<h2>Users List</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Full Name</th>
+            <th>Email</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var user in Model.Users)
+        {
+            <tr>
+                <td>@user.FirstName @user.LastName</td>
+                <td>@user.Email</td>
+                <td>
+                    <a href="@Url.Page("/Admin/ManageUser", new { id = user.Id })">Edit</a> |
+                    <a href="@Url.Page("/Admin/DeleteUser", new { id = user.Id })">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

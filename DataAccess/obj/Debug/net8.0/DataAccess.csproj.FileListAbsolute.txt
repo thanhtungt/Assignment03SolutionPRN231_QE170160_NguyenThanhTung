@@ -1,0 +1,17 @@
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\bin\Debug\net8.0\DataAccess.deps.json
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\bin\Debug\net8.0\DataAccess.runtimeconfig.json
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\bin\Debug\net8.0\DataAccess.dll
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\bin\Debug\net8.0\DataAccess.pdb
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\bin\Debug\net8.0\BusinessObject.dll
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\bin\Debug\net8.0\BusinessObject.pdb
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\DataAccess.csproj.AssemblyReference.cache
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\DataAccess.GeneratedMSBuildEditorConfig.editorconfig
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfoInputs.cache
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\DataAccess.AssemblyInfo.cs
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\DataAccess.csproj.CoreCompileInputs.cache
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\DataAccess.csproj.Up2Date
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\DataAccess.dll
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\refint\DataAccess.dll
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\DataAccess.pdb
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\DataAccess.genruntimeconfig.cache
+F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\DataAccess\obj\Debug\net8.0\ref\DataAccess.dll

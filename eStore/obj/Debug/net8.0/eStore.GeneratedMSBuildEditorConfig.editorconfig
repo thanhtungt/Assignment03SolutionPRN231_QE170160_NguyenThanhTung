@@ -1,0 +1,107 @@
+is_global = true
+build_property.TargetFramework = net8.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = true
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property.EnforceExtendedAnalyzerRules = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = eStore
+build_property.RootNamespace = eStore
+build_property.ProjectDir = F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStore\
+build_property.EnableComHosting = 
+build_property.EnableGeneratedComInterfaceComImportInterop = 
+build_property.RazorLangVersion = 8.0
+build_property.SupportLocalizedComponentNames = 
+build_property.GenerateRazorMetadataSourceChecksumAttributes = 
+build_property.MSBuildProjectDirectory = F:\SPRING2025\PRN231\ass3\Assigment03Solution_StudentCode\eStore
+build_property._RazorSourceGeneratorDebug = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Account/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Account/Logout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxMb2dvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Account/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWNjb3VudFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/AddCategoryModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRkQ2F0ZWdvcnlNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/AddProductModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRkUHJvZHVjdE1vZGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/AdminDashboard.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQWRtaW5EYXNoYm9hcmQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/CategoryListModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cQ2F0ZWdvcnlMaXN0TW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/EditCategoryModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdENhdGVnb3J5TW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/EditProductModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cRWRpdFByb2R1Y3RNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/OrderListModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cT3JkZXJMaXN0TW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/ProductManagementModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cUHJvZHVjdE1hbmFnZW1lbnRNb2RlbC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Admin/UsersListModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQWRtaW5cVXNlcnNMaXN0TW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Error.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Index.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXguY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Privacy.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcUHJpdmFjeS5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Shared/_ValidationScriptsPartial.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9WYWxpZGF0aW9uU2NyaXB0c1BhcnRpYWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Users/CartModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcQ2FydE1vZGVsLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Users/EditProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcRWRpdFByb2ZpbGUuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Users/OrderHistoryModel.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcVXNlcnNcT3JkZXJIaXN0b3J5TW9kZWwuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/_ViewImports.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdJbXBvcnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/_ViewStart.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX1ZpZXdTdGFydC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[F:/SPRING2025/PRN231/ass3/Assigment03Solution_StudentCode/eStore/Pages/Shared/_Layout.cshtml]
+build_metadata.AdditionalFiles.TargetPath = UGFnZXNcU2hhcmVkXF9MYXlvdXQuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = b-o569tlmlj4

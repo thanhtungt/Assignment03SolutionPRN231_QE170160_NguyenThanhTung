@@ -1,0 +1,12 @@
+﻿@page
+@model eStore.Pages.Admin.EditCategoryModel
+<h2>Sửa Danh mục</h2>
+<form method="post">
+    <div class="form-group">
+        <label for="CategoryName">Tên Danh mục</label>
+        <input type="text" class="form-control" id="CategoryName" name="Category.CategoryName" value="@Model.Category.CategoryName" required />
+    </div>
+    <!-- Ẩn trường ID danh mục nếu không cần thiết, nhưng vẫn phải gửi nó -->
+    <input type="hidden" name="Category.CategoryId" value="@Model.Category.CategoryId" />
+    <button type="submit" class="btn btn-primary">Lưu Thay đổi</button>
+</form>

@@ -1,0 +1,46 @@
+﻿@page
+@model eStore.Pages.Users.OrderHistoryModel
+<h2>Lịch sử đơn hàng</h2>
+
+@if (Model.Orders.Any())
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Mã đơn hàng</th>
+                <th>Ngày đặt</th>
+                <th>Phí vận chuyển</th>
+                <th>Chi tiết</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var order in Model.Orders)
+            {
+                <tr>
+                    <td>@order.OrderId</td>
+                    <td>@order.OrderDate.ToString("dd/MM/yyyy HH:mm")</td>
+                    <td>@order.Freight</td>
+                    <td>
+                        <ul>
+                            @if (order.OrderDetails != null && order.OrderDetails.Any())
+                            {
+                                foreach (var detail in order.OrderDetails)
+                                {
+                                    <li>@detail.ProductName - @detail.Quantity x @detail.UnitPrice</li>
+                                }
+                            }
+                            else
+                            {
+                                <li>Không có chi tiết</li>
+                            }
+                        </ul>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+else
+{
+    <p>Chưa có đơn hàng nào.</p>
+}

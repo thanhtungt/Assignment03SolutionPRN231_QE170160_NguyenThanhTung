@@ -1,0 +1,38 @@
+﻿@page
+@model eStore.Pages.Users.EditProfileModel
+<h2>Chỉnh sửa thông tin cá nhân</h2>
+
+@if (TempData["SuccessMessage"] != null)
+{
+    <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+}
+
+<form method="post">
+    <input type="hidden" asp-for="Input.Id" />
+    <div class="form-group">
+        <label asp-for="Input.FirstName">Họ</label>
+        <input asp-for="Input.FirstName" class="form-control" />
+        <span asp-validation-for="Input.FirstName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Input.LastName">Tên</label>
+        <input asp-for="Input.LastName" class="form-control" />
+        <span asp-validation-for="Input.LastName" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Input.Email">Email</label>
+        <input asp-for="Input.Email" class="form-control" />
+        <span asp-validation-for="Input.Email" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Input.UserName">Tên đăng nhập</label>
+        <input asp-for="Input.UserName" class="form-control"  />
+        <span asp-validation-for="Input.UserName" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary mt-3">Lưu thay đổi</button>
+    <a asp-page="/Index" class="btn btn-secondary mt-3">Hủy</a>
+</form>
+
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

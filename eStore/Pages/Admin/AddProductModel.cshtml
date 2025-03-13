@@ -1,0 +1,32 @@
+﻿@page
+@model eStore.Pages.Admin.AddProductModel
+
+<h2>Add New Product</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="ProductName">Product Name</label>
+        <input type="text" class="form-control" id="ProductName" name="Product.ProductName" required />
+    </div>
+    <div class="form-group">
+        <label for="UnitPrice">Price</label>
+        <input type="number" class="form-control" id="UnitPrice" name="Product.UnitPrice" required />
+    </div>
+    <div class="form-group">
+        <label for="UnitsInStock">Stock</label>
+        <input type="number" class="form-control" id="UnitsInStock" name="Product.UnitsInStock" required />
+    </div>
+
+    <div class="form-group">
+        <label for="CategoryId">Category</label>
+        <select class="form-control" id="CategoryId" name="Product.CategoryId" required>
+            <option value="">Select Category</option>
+            @foreach (var category in Model.Categories)
+            {
+                <option value="@category.CategoryId">@category.CategoryName</option>
+            }
+        </select>
+    </div>
+   
+    <button type="submit" class="btn btn-primary">Add Product</button>
+</form>

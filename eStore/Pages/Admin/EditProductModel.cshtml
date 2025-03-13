@@ -1,0 +1,38 @@
+﻿@page "{id:int}"
+@model eStore.Pages.Admin.EditProductModel
+
+<h2>Edit Product</h2>
+
+<form method="post">
+    <div class="form-group">
+        <label for="ProductName">Product Name</label>
+        <input type="text" class="form-control" id="ProductName" name="Product.ProductName" value="@Model.Product.ProductName" required />
+    </div>
+
+    <div class="form-group">
+        <label for="UnitPrice">Price</label>
+        <input type="number" class="form-control" id="UnitPrice" name="Product.UnitPrice" value="@Model.Product.UnitPrice" required />
+    </div>
+
+    <div class="form-group">
+        <label for="UnitsInStock">Stock</label>
+        <input type="number" class="form-control" id="UnitsInStock" name="Product.UnitsInStock" value="@Model.Product.UnitsInStock" required />
+    </div>
+
+    <div class="form-group">
+        <label for="CategoryId">Category</label>
+        <select class="form-control" id="CategoryId" name="Product.CategoryId" required>
+            <option value="">Select Category</option>
+            @foreach (var category in Model.Categories)
+            {
+                <option value="@category.CategoryId" selected="@((category.CategoryId == Model.Product.CategoryId) ? "selected" : "")">
+                    @category.CategoryName
+                </option>
+
+            }
+        </select>
+    </div>
+
+    <input type="hidden" name="Product.ProductId" value="@Model.Product.ProductId" />
+    <button type="submit" class="btn btn-primary">Save Changes</button>
+</form>

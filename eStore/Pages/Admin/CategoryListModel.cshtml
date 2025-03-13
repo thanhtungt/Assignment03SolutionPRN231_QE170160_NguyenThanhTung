@@ -1,0 +1,64 @@
+﻿@page
+@model eStore.Pages.Admin.CategoryListModelModel
+
+<h2>Category List</h2>
+
+<!-- Đặt nút Add ra ngoài vòng lặp foreach để chỉ hiển thị một lần -->
+@if (User.IsInRole("Admin"))
+{
+    <a href="@Url.Page("/Admin/AddCategoryModel")" class="btn btn-success mb-3">Add</a>
+}
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>Category Name</th>
+            <th>Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @if (Model.Categories != null && Model.Categories.Count > 0)
+        {
+            @foreach (var category in Model.Categories)
+            {
+                <tr>
+                    <td>@category.CategoryName</td>
+                    <td>
+                        <a href="@Url.Page("/Admin/EditCategoryModel", new { id = category.CategoryId })" class="btn btn-primary">Edit</a>
+                        <button class="btn btn-danger" onclick="deleteCategory(@category.CategoryId)">Delete</button>
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr><td colspan="2">No categories available.</td></tr>
+        }
+    </tbody>
+</table>
+
+@section Scripts {
+    <script>
+        function deleteCategory(categoryId) {
+            if (confirm('Are you sure you want to delete this category?')) {
+                fetch(`https://localhost:7029/api/Categories/${categoryId}`, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                })
+                    .then(response => {
+                        if (response.ok) {
+                            alert('Category deleted successfully');
+                            location.reload();
+                        } else {
+                            alert('Failed to delete the category');
+                        }
+                    })
+                    .catch(error => {
+                        alert('Failed to delete the category');
+                    });
+            }
+        }
+    </script>
+}

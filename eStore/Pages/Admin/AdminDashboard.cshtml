@@ -1,0 +1,17 @@
+﻿@page
+@model eStore.Pages.AdminDashboardModel
+
+<h2>Admin Dashboard</h2>
+<p>Welcome to the Admin Dashboard!</p>
+
+@if (User.IsInRole("Admin"))
+{
+    <ul>
+        <li><a asp-page="/Admin/ProductManagementModel">Product Management</a></li>
+        <li><a asp-page="/Admin/UsersListModel">Users List</a></li>
+        <li><a asp-page="/Admin/CategoryListModel">Category List</a></li>
+        <li><a asp-page="/Admin/OrderListModel">Order List</a></li>
+    </ul>
+}
+
+<a asp-page="/Account/Logout">Logout</a>
